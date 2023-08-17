@@ -1,4 +1,7 @@
 const peopleInSpace = document.querySelector(`[data-js="block-element"]`);
+const namesOfPeopleInSpace = document.querySelector(
+  `[data-js="list-item-name"]`
+);
 
 async function fetchPeople() {
   console.log("hello");
