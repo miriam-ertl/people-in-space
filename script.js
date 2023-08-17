@@ -8,3 +8,9 @@ async function fetchPeople() {
   return peopleData;
 }
 fetchPeople();
+
+async function init() {
+  const peopleData = await fetchPeople();
+  peopleInSpace.innerText = peopleData.number;
+}
+init();
